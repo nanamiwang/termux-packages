@@ -7,7 +7,7 @@ termux_setup_meson() {
 		local MESON_TAR_FILE=$TERMUX_PKG_TMPDIR/$MESON_TAR_NAME
 		local MESON_TMP_FOLDER=$TERMUX_PKG_TMPDIR/meson-$MESON_VERSION
 		termux_download \
-			"https://github.com/mesonbuild/meson/releases/download/$MESON_VERSION/meson-$MESON_VERSION.tar.gz" \
+			"http://192.168.31.157/meson-$MESON_VERSION.tar.gz" \
 			"$MESON_TAR_FILE" \
 			0c277472e49950a5537e3de3e60c57b80dbf425788470a1a8ed27446128fc035
 		tar xf "$MESON_TAR_FILE" -C "$TERMUX_PKG_TMPDIR"

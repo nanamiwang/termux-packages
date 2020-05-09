@@ -7,10 +7,10 @@ TERMUX_PKG_SHA256=(00a1ee1f389f81e9979f3a640a01c431b3021de0d42278f6508391a2f0b81
 		   5778512b2e065c204010f88777d44b95250671103e434f9dc7363ab2e3804253		   
 		   86262bad3e2fd784ba8c5e2158d7aa36f12b85f2515e95bc81d65d75bb9b0c82
 		   5c94060f846f965698574d9ce22975c0e9f04c9b14088c3af5f03870af75cace)
-TERMUX_PKG_SRCURL=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$TERMUX_PKG_VERSION/llvm-$TERMUX_PKG_VERSION.src.tar.xz
-                   https://github.com/llvm/llvm-project/releases/download/llvmorg-$TERMUX_PKG_VERSION/clang-$TERMUX_PKG_VERSION.src.tar.xz
-                   https://github.com/llvm/llvm-project/releases/download/llvmorg-$TERMUX_PKG_VERSION/lld-$TERMUX_PKG_VERSION.src.tar.xz
-                   https://github.com/llvm/llvm-project/releases/download/llvmorg-$TERMUX_PKG_VERSION/openmp-$TERMUX_PKG_VERSION.src.tar.xz)
+TERMUX_PKG_SRCURL=(http://192.168.31.157/llvm-$TERMUX_PKG_VERSION.src.tar.xz
+                   http://192.168.31.157/clang-$TERMUX_PKG_VERSION.src.tar.xz
+                   http://192.168.31.157/lld-$TERMUX_PKG_VERSION.src.tar.xz
+                   http://192.168.31.157/openmp-$TERMUX_PKG_VERSION.src.tar.xz)
 TERMUX_PKG_HOSTBUILD=true
 TERMUX_PKG_RM_AFTER_INSTALL="
 bin/clang-check

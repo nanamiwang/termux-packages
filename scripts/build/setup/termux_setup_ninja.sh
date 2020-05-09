@@ -6,7 +6,7 @@ termux_setup_ninja() {
 		if [ ! -x "$NINJA_FOLDER/ninja" ]; then
 			mkdir -p "$NINJA_FOLDER"
 			local NINJA_ZIP_FILE=$TERMUX_PKG_TMPDIR/ninja-$NINJA_VERSION.zip
-			termux_download https://github.com/ninja-build/ninja/releases/download/v$NINJA_VERSION/ninja-linux.zip \
+			termux_download http://192.168.31.157/ninja-linux.zip \
 				"$NINJA_ZIP_FILE" \
 				6566836ddf3d72ca06685b34814e0c6fa0f0943542d651d0dab3150f10307c82
 			unzip "$NINJA_ZIP_FILE" -d "$NINJA_FOLDER"

@@ -8,7 +8,7 @@ termux_setup_cmake() {
 
 	if [ "$TERMUX_ON_DEVICE_BUILD" = "false" ]; then
 		if [ ! -d "$TERMUX_CMAKE_FOLDER" ]; then
-			termux_download https://cmake.org/files/v$TERMUX_CMAKE_MAJORVESION/$TERMUX_CMAKE_TARNAME \
+			termux_download http://192.168.31.157/$TERMUX_CMAKE_TARNAME \
 				"$TERMUX_CMAKE_TARFILE" \
 				dc57f3cc448ca67fc8776b4ad4c22b087b9c6a8e459938b9622b8c7f4ef6b21e
 			rm -Rf "$TERMUX_PKG_TMPDIR/cmake-${TERMUX_CMAKE_VERSION}-Linux-x86_64"
